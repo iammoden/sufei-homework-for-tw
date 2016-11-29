@@ -44,9 +44,12 @@ vagrant up
 
 ##测试方法:
 ```
-curl http://127.0.0.1/hello/ThoughtWorks
-curl http://127.0.0.1/hello/ILoveU
+vagrant完成后,需要等待约1-2分钟,以便后台装载java(hello world sample)程序.然后可通过以下命令测试:
+- curl http://127.0.0.1:7000/hello/ThoughtWorks
+- curl http://127.0.0.1:7000/hello/ILoveU
 ```
+
+如果要想实现,外部访问,可通过一条iptables 规则.
 
 
 
